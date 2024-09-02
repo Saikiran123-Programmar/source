@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px;
+    color: white;
+    width:100%;
+}
+
+.nav-left,.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-location {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    margin-right: 5px;
+}
+
+.nav-section {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-section:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: #febd69;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-btn:hover {
+    background-color: #f3a847;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+select{
+    height:28px;
+    border-radius:4px;
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="nav-logo">Amazon.in</a>
+            <a href="#" class="nav-location"><span class="location-icon">&#128205;</span> Update location</a>
+        </div>
+        <div class="nav-right">
+            <div class="nav-center">
+                <select>
+                    <option>All</option>
+                    <option>Laptops</option>
+                    <option>Mobiles</option>
+                    <option>Fashion</option>
+                    <option>Offers</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-btn">&#128269;</button>
+            </div>
+            <a href="#" class="nav-link">Returns & Orders</a>
+            <a href="#" class="nav-link cart-icon">&#128717;</a>
+        </div>
+    </nav>
+</body>
+</html>
